@@ -3,9 +3,12 @@ let watch = function() {
         let $elem = u(elem);
         let url = $elem.attr('href');
         if (((url.indexOf('https://docs.google.com') === 0) || (url.indexOf('https://drive.google.com') === 0))
-            && (url.indexOf('form') === -1)
+            // ignore Google From
+            && (url.indexOf('forms') === -1)
+            // ignore Open url
             && (url.indexOf('open') === -1)
-            && (url.indexOf('folder') === -1)
+            // ignore Google Drive Folder
+            && (url.indexOf('folders') === -1)
         ) {
             let $placeholder = u('<div class="googleDrivePreview__placeholder">カーソルを合わせるとプレビューが表示されます</div>');
             $elem.parent().append($placeholder);
