@@ -1,0 +1,23 @@
+.googleDrivePreview__placeholder {
+    background-color: #ccc;
+    color: #fff;
+    width: 400px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+}
+
+.googleDrivePreview__preview {
+    overflow: auto;
+    resize: both;
+    width: 400px;
+    height: 150px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.googleDrivePreview__preview > iframe {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
