@@ -5,3 +5,9 @@
 
 ## Licence
 MIT
+
+
+## References
+* https://developer.chrome.com/extensions/getstarted
+* https://umbrellajs.com/documentation
+
